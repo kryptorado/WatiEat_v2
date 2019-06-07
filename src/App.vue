@@ -2,7 +2,9 @@
   <v-app>
     <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
     <Navbar/>
+    <Menu/>
     <v-content>
+
       <router-view></router-view>
     </v-content>
   </v-app>
@@ -10,10 +12,11 @@
 
 <script>
   import Navbar from '@/components/Navbar'
+  import Menu from '@/components/Menu'
 
 export default {
   name: 'App',
-  components: {Navbar},
+  components: {Navbar, Menu},
   data () {
     return {
       //
